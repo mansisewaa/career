@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        // Schema::create('categories', function (Blueprint $table) {
-        //     $table->id();
-        //     $table->string('name');
-        //     $table->string('slug');
-        //     $table->string('image');
-        //     $table->string('description');
-        //     $table->boolean('status')->default(true);
-        //     $table->timestamps();
-        //     $table->softDeletes();
-        // });
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('slug')->nullable();
+            $table->string('image')->nullable();
+            $table->string('description')->nullable();
+            $table->boolean('status')->default(true);
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**

@@ -16,12 +16,12 @@ body {
 
 a {
   color: #ed502e;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
   color: #f1775d;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1,
@@ -1843,4 +1843,103 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.planner-div h5{
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #1e3f9a;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.4px;
+}
+.planner-div h1{
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'InterFont';
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.planner-div h4{
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(66 66 66);
+}
+.planner-div h4 img{
+  max-width: 20px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.planner-div ul{
+  list-style: none;
+  margin: 50px auto 30px auto;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  width: 85%;
+  justify-content: center;
+}
+.planner-div ul li{
+  flex: 0.4;
+  text-align: center;
+}
+.planner-div ul li span.opt{
+  /* width: 100px;
+  height: 100px;
+  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #999999; */
+
+  width: 220px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  border: 3px solid #999999;
+  text-align: center;
+  border: 1px solid #7277843b;
+  padding: 16px 5px;
+}
+.planner-div ul li span.opt:hover, .planner-div ul li span.opt.selected{
+  cursor: pointer;
+  color: #1e3f9a;
+  border-color: #1e3f9a !important;
+  background-color: #1f419e12;
+}
+.planner-div ul li span.opt-name{
+  display: block;
+  /* font-size: 18px;
+  margin: 10px 0; */
+
+  font-size: 15px;
+  margin: 15px 0 0 0;
+}
+/* .planner-div ul li span.opt:hover ~ .planner-div ul li span.opt-name, .planner-div ul li span.opt.selected .opt-name{
+  color: #1e3f9a;
+} */
+.planner-div .input-group{
+  width: 65%;
+  margin: 50px auto;
+  position: relative;
+}
+.planner-div .input-group .input-group-text{
+  border-radius: 0;
+  padding: 0 18px;
+  height: 56px;
+}
+.planner-div .input-group input{
+  border-radius: 0;
+  height: 56px;
+}
+.planner-div .input-group input:focus{
+  border-color: #1e3f9a !important;
 }
